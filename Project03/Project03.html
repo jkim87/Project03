@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title> HappyDailyLife </title>
       <style>
+
+
         <link href="https://fonts.googleapis.com/css?family=Anton|Major" rel="stylesheet">
-
-
             p {height :5900px;
 
             }
@@ -610,13 +610,12 @@ opacity: 1;
 to {
 opacity: 0;
 }
-}
+
 
 span {
-animation: blink 1s infinite;
+animation: blink 50s infinite;
 }
-
-
+}
 
 
             .happyface{
@@ -625,11 +624,7 @@ animation: blink 1s infinite;
                 top:60px;
             }
 
-            .sleephappy{
-                position:absolute;
-                left:180px;
-                top:580px;
-            }
+            
 
             .dogfeet{
                 position:absolute;
@@ -641,6 +636,30 @@ animation: blink 1s infinite;
                 left:550px;
                 top:700px;
             }
+            .dogBone {
+                display: inline-block;
+                position:absolute;
+                left:800px;
+                top:850px;
+                background: Pink;
+                z-index:2;
+                border-radius:50%;
+                width: 50px;
+                height: 50px;
+                transition:transform 700ms ease-in-out
+                position-events: none;
+
+            }
+
+            .trigger:hover .dogBone{
+                transform: translate(150px, 150px;)rotate(10deg)
+            }
+
+
+            .dogBone:hover{
+                transform:translate(200px,150px)
+            }
+
 
             .riceball {
                 position:absolute;
@@ -658,7 +677,13 @@ animation: blink 1s infinite;
             a2 img { display:none; }
             a2:hover img { display:block; }
 
-          
+
+
+            #myButton {height: 300px;}
+
+
+
+
         </style>
 
 
@@ -669,6 +694,9 @@ animation: blink 1s infinite;
 ​
 
 <body>
+
+
+
 
         <img class="happyface" src= "./image/puppy.png"  alt="HappyImage" title="HappyImage">
 
@@ -681,30 +709,33 @@ animation: blink 1s infinite;
                 </a></p>
   <a class href="wakeup">wake up<img src="./image/dogfeet.png"/></a>
 
-
-        <p><a href="https://en.wikipedia.org/wiki/Blue">
-                222
-              </a></p>
-
           <div class="container">
           <div class="clock">
           08<span>:</span>00
           </div>
           </div>
 
-
-
         <img class="dogfeet" src="./image/dogfeet.png" alt="dogfeet" title="dogfeet">
         <img class="dogfeetbig" src="./image/dogfeetbig.png" alt="dogfeetbig" title="dogfeetbig">
 
-        <a2 class href="feed me">feed me<img src="./image/dogfeet.png"/></a2>
+        <a class href2="feed me">feed me<img src="./image/dogfeet.png"/></a>
 
 
 
+        <img class="dogBone" src="./image/dog-bone.png" alt="dogBone" title="dogBone">
 
         <img class="riceball" src="./image/riceball.png" alt="riceball" title="riceball">
 
-        <img class="sleephappy" src="./image/IMG_2596.png" alt="sleephappy" title="sleephappy">
+
+
+
+
+        <img id="myButton" src="./image/IMG_2596.png" />
+
+
+
+
+  </div>
 
 
         <p class= "c1"> </p>
@@ -712,5 +743,6 @@ animation: blink 1s infinite;
 
     </body>
     <script src="script.js" rel="script"></script>
+    <script type="text/javascript">
 
   </html>
