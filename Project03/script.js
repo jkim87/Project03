@@ -65,25 +65,25 @@ $(window).scroll(function() {
 
 
 
-var images = [
-        './Image/IMG_2596.png',
-        './Image/IMG_2126.png',
-        './Image/IMG_2028.png'
-    ],
-    i = 1;
-
-for (var j=images.length; j--;) {
-    var img = new Image();
-    img.src = images[j];
-}
-
-document.getElementById('myButton').addEventListener('click', function() {
-    this.src = images[i >= images.length - 1 ? i = 0 : ++i];
-}, false);
+// var images = [
+//         './Image/IMG_2596.png',
+//         './Image/IMG_2126.png',
+//         './Image/IMG_2028.png'
+//     ],
+//     i = 1;
+//
+// for (var j=images.length; j--;) {
+//     var img = new Image();
+//     img.src = images[j];
+// }
+//
+// document.getElementById('myButton').addEventListener('click', function() {
+//     this.src = images[i >= images.length - 1 ? i = 0 : ++i];
+// }, false);
 
 
 ////////////////first page happyimage change every secound///
-var imgurls = ['IMG_2596.png', 'IMG_2126.png', 'IMG_5782.png', 'IMG_9099.png', 'IMG_1755.png']
+var imgurls = ['IMG_2596.png', 'IMG_2126.png', 'IMG_5782.png','IMG_5782-1.png','IMG_1755.png', 'IMG_9775.png', 'IMG_1755-1.png', 'IMG_0282.png', 'IMG_0282-1.png']
 var count = 0;
 setInterval(function() {
   $(".slideshow").html(`<img src="./Image/${imgurls[count]}">`);
@@ -112,7 +112,10 @@ $(".dogwalk").click(function() {
   $(".dogball2").addClass("showDogBall2");
 })
 $(".dogwalk").hover(function() {
-  $(".dogball4").addClass("showDogBall1");
+  $(".dogball3").addClass("showDogBall3");
+})
+$(".dogwalk").hover(function() {
+  $(".dogball4").addClass("showDogBall4");
 })
 
 
