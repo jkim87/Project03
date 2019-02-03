@@ -1,0 +1,454 @@
+/* css reset */
+*{
+margin: 0;
+padding: 0;
+}
+
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Iceland';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Iceland'), local('Iceland-Regular'), url(http://themes.googleusercontent.com/static/fonts/iceland/v3/F6LYTZLHrG9BNYXRjU7RSw.woff) format('woff');
+}
+
+
+body {
+  color: #000;
+  background-color: #f4f4f4;
+  transition: background-color 1s ease;
+
+  /* background: linear-gradient(black, pink, hotpink, steelblue, midnightblue); */
+  cursor: url(./image/puppycopy128.png), auto;
+}
+.Red {
+  font-size: 2.5em;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* panel styles */
+.panel {
+  position: relative;
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+  font-family: sans-serif;
+  /* outline: 10px solid hotpink; */
+  /* turn above on to see the edge of panels */
+}
+
+/* colours */
+.color-violet {
+  background-color: #7A4EAB;
+}
+.color-indigo {
+  background-color: #4332CF;
+}
+.color-blue {
+  background-color: #2F8FED;
+}
+.color-green {
+  background-color: #4DCF42;
+}
+.color-yellow {
+  background-color: #FAEB33;
+}
+.color-orange {
+  background-color: #F19031;
+}
+.color-red {
+  background-color: #F2293A;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.slideshow img{
+   margin-top: 80px;
+}
+
+
+/*neeeeoooon*/
+p{
+  text-align:center;
+  font-size:7em;
+  margin:20px 0 20px 0;
+}
+
+a{
+  text-decoration:none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+p:nth-child(1) a{
+  color:#FF1177;
+  font-family:Monoton;
+}
+p:nth-child(1) a:hover{
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+/*glow for webkit*/
+@-webkit-keyframes neon1 {
+  from {
+  text-shadow: 0 0 10px #fff,
+           0 0 20px  #fff,
+           0 0 30px  #fff,
+           0 0 40px  #FF1177,
+           0 0 70px  #FF1177,
+           0 0 80px  #FF1177,
+           0 0 100px #FF1177,
+           0 0 150px #FF1177;
+  }
+  to {
+  text-shadow: 0 0 5px #fff,
+           0 0 10px #fff,
+           0 0 15px #fff,
+           0 0 20px #FF1177,
+           0 0 35px #FF1177,
+           0 0 40px #FF1177,
+           0 0 50px #FF1177,
+           0 0 75px #FF1177;
+  }
+}
+
+/*glow for mozilla*/
+@-moz-keyframes neon1 {
+  from {
+  text-shadow: 0 0 10px #fff,
+           0 0 20px  #fff,
+           0 0 30px  #fff,
+           0 0 40px  #FF1177,
+           0 0 70px  #FF1177,
+           0 0 80px  #FF1177,
+           0 0 100px #FF1177,
+           0 0 150px #FF1177;
+  }
+  to {
+  text-shadow: 0 0 5px #fff,
+           0 0 10px #fff,
+           0 0 15px #fff,
+           0 0 20px #FF1177,
+           0 0 35px #FF1177,
+           0 0 40px #FF1177,
+           0 0 50px #FF1177,
+           0 0 75px #FF1177;
+  }
+}
+
+/* glow */
+@keyframes neon1 {
+  from {
+  text-shadow: 0 0 10px #fff,
+           0 0 20px  #fff,
+           0 0 30px  #fff,
+           0 0 40px  #FF1177,
+           0 0 70px  #FF1177,
+           0 0 80px  #FF1177,
+           0 0 100px #FF1177,
+           0 0 150px #FF1177;
+  }
+  to {
+  text-shadow: 0 0 5px #fff,
+           0 0 10px #fff,
+           0 0 15px #fff,
+           0 0 20px #FF1177,
+           0 0 35px #FF1177,
+           0 0 40px #FF1177,
+           0 0 50px #FF1177,
+           0 0 75px #FF1177;
+  }
+}
+
+p:nth-child(2) a{
+  font-size:1.5em;
+  color:#228DFF;
+  font-family:Iceland;
+}
+p:nth-child(2) a:hover{
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+
+}
+@-moz-keyframes neon2 {
+  from {
+  text-shadow: 0 0 10px #fff,
+           0 0 20px  #fff,
+           0 0 30px  #fff,
+           0 0 40px  #228DFF,
+           0 0 70px  #228DFF,
+           0 0 80px  #228DFF,
+           0 0 100px #228DFF,
+           0 0 150px #228DFF;
+  }
+  to {
+  text-shadow: 0 0 5px #fff,
+           0 0 10px #fff,
+           0 0 15px #fff,
+           0 0 20px #228DFF,
+           0 0 35px #228DFF,
+           0 0 40px #228DFF,
+           0 0 50px #228DFF,
+           0 0 75px #228DFF;
+  }
+}
+@-webkit-keyframes neon2 {
+  from {
+  text-shadow: 0 0 10px #fff,
+           0 0 20px  #fff,
+           0 0 30px  #fff,
+           0 0 40px  #228DFF,
+           0 0 70px  #228DFF,
+           0 0 80px  #228DFF,
+           0 0 100px #228DFF,
+           0 0 150px #228DFF;
+  }
+  to {
+  text-shadow: 0 0 5px #fff,
+           0 0 10px #fff,
+           0 0 15px #fff,
+           0 0 20px #228DFF,
+           0 0 35px #228DFF,
+           0 0 40px #228DFF,
+           0 0 50px #228DFF,
+           0 0 75px #228DFF;
+  }
+}
+
+@keyframes neon2 {
+  from {
+  text-shadow: 0 0 10px #fff,
+           0 0 20px  #fff,
+           0 0 30px  #fff,
+           0 0 40px  #228DFF,
+           0 0 70px  #228DFF,
+           0 0 80px  #228DFF,
+           0 0 100px #228DFF,
+           0 0 150px #228DFF;
+  }
+  to {
+  text-shadow: 0 0 5px #fff,
+           0 0 10px #fff,
+           0 0 15px #fff,
+           0 0 20px #228DFF,
+           0 0 35px #228DFF,
+           0 0 40px #228DFF,
+           0 0 50px #228DFF,
+           0 0 75px #228DFF;
+  }
+}
+
+
+p {
+  font-size:3.5em;
+}
+
+p a:hover{
+  color:#ffffff;
+}
+
+.happyface {
+  position: relative;
+  margin: 0 auto;
+}
+
+.happyface:hover {
+  -webkit-transform:rotate(360deg);
+  transform:rotate(360deg);
+  transition: all 1s linear;
+}
+
+.arrow img {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  top: 0%;
+  left: 0%;
+  -webkit-animation: arrow 2s both infinite;
+  animation: arrow 2s both infinite;
+}
+
+
+@-webkit-keyframes arrow {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+    }
+}
+
+@keyframes arrow {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+}
+
+
+
+/* @-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
+
+
+
+.dogfeet{
+  position:absolute;
+  left:350px;
+  top:600px;
+}
+.dogfeetbig{
+  position:absolute;
+  left:550px;
+  top:700px;
+}
+.dogBone {
+  display: inline-block;
+  position:absolute;
+  left:940px;
+  top:1310px;
+  z-index:2;
+  width: 50px;
+  height: 50px;
+  transition:transform 700ms ;
+
+}
+.dogwalk{
+  text-align: center;
+  z-index: 5;
+}
+.dogwalk img {
+  z-index: 5;
+}
+
+.dogball1{
+  position: absolute;
+  top:16%;
+  left:46%;
+  z-index: 1;
+  opacity: 0;
+}
+
+
+.dogball2{
+  position: absolute;
+  top:16%;
+  left:46%;
+  z-index: 1;
+  opacity: 0;
+}
+.dogball3{
+  position: absolute;
+  top:16%;
+  left:46%;
+  z-index: 1;
+}
+.dogball4{
+  position: absolute;
+  top:16%;
+  left:46%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.showDogBall1 {
+  opacity: 1;
+  transform: translateX(-200px) rotate(45deg);
+  transition: all 2s ease;
+}
+.showDogBall2 {
+  opacity: 1;
+  transform: translateX(200px) rotate(-45deg);
+  transition: all 2s ease;
+}
+
+.HappyChicken{
+  position:absolute;
+  left:207px;
+  top:2590px;
+}
+
+.dogBone:hover{
+    transform:translate(20px,-180px)
+}
+
+.riceball {
+  position:absolute;
+  left:890px;
+  top:1280px;
+}
+.riceball:hover {
+  animation: shake 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(10px, 1px) rotate(0deg); }
+  20% { transform: translate(-8px, 0px) rotate(5deg); }
+  50% { transform: translate(-7px, 2px) rotate(-1deg); }
+  80% { transform: translate(-10px, -1px) rotate(1deg); }
+  100% { transform: translate(1px, -2px) rotate(-5deg); }
+}
+
+#myButton {
+  position: absolute;
+  left:480px;
+  top:900px;
+  height: 300px;
+}
+
+
+
+
+
+
+/*REEEEEEEEEEESPONSIVE*/
+@media (max-width: 650px) {
+  .Red {
+    font-size: 1.4em;
+  }
+}
