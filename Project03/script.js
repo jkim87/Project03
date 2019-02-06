@@ -83,7 +83,7 @@ $(window).scroll(function() {
 
 
 ////////////////first page happyimage change every secound///
-var imgurls = ['IMG_2596.png', 'IMG_2126.png', 'IMG_5782.png','IMG_5782-1.png','IMG_1755.png', 'IMG_9775.png', 'IMG_1755-1.png', 'IMG_0282.png', 'IMG_0282-1.png']
+var imgurls = ['IMG_1255.png','IMG_8345.png', 'IMG_9775.png', 'IMG_1755-1.png', 'IMG_2993.png','IMG_2968.png']
 var count = 0;
 setInterval(function() {
   $(".slideshow").html(`<img src="./Image/${imgurls[count]}">`);
@@ -119,7 +119,19 @@ $(".dogwalk").hover(function() {
 })
 
 
-
+// ===== Scroll to Top ====
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
 
 // class HoverButton {
 //   onHover(x, y) {
@@ -141,3 +153,34 @@ $(".dogwalk").hover(function() {
 //     this.el.style.zIndex = 1;
 //   }
 // }
+
+//THREEJS RELATED VARIABLES
+function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+
+
+
+
+//onclick shack//
+   $( document ).click(function() {
+     $( "#wakeup1" ).effect( "shake" );
+   });
+   //onclick shack//
+
+
+
+
+
+
+     function PlaySound(soundobj) {
+         var thissound=document.getElementById(soundobj);
+         thissound.play();
+     }
+
+     function StopSound(soundobj) {
+         var thissound=document.getElementById(soundobj);
+         thissound.pause();
+         thissound.currentTime = 0;
+     }

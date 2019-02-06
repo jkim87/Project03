@@ -21,7 +21,7 @@ padding: 0;
 
 body {
   color: #000;
-  background-color: #6b063e;
+  background-color: black;
   z-index: 100;
   transition: background-color 1s ease;
 
@@ -30,17 +30,20 @@ body {
 }
 .Red {
   font-size: 2.5em;
+  position: relative;
+  left: 10%;
 }
 
 h2 {
   text-align: center;
+  font-size: 70px;
 }
 
 /* panel styles */
 .panel {
   position: relative;
   /* min height incase content is higher than window height */
-  min-height: 100vh;
+  min-height: 95vh;
   font-family: sans-serif;
   /* outline: 10px solid hotpink; */
   /* turn above on to see the edge of panels */
@@ -50,32 +53,28 @@ h2 {
 .color-violet {
   background-color: #7A4EAB;
 }
-
 .color-blue {
   background-color: #2F8FED;
 }
-.color-green {
-  background-color: #4DCF42;
+.color-hex{
+  background-color: #00303f;
 }
 .color-yellow {
   background-color: #FAEB33;
 }
-
 .color-red {
   background-color: #F2293A;
 }
-
-
 
 header {
   display: flex;
   justify-content: space-evenly;
 }
-
 .slideshow img{
    margin-top: 80px;
+   position: absolute;
+   left: 0%;
 }
-
 
 /*neeeeoooon*/
 p{
@@ -261,13 +260,15 @@ p a:hover{
 }
 
 .happyface {
-  position: relative;
+  position: absolute;
   margin: 0 auto;
-  left:10%;
-  top:5%;
+  left:42%;
+  top:165%;
 }
 
 .happyface:hover {
+  transform: scale(2);
+
   -webkit-transform:rotate(360deg);
   transform:rotate(360deg);
   transition: all 1s linear;
@@ -333,50 +334,58 @@ p a:hover{
   }
 } */
 
+p{
+  margin-bottom: 0;
+  padding-top: 40px;
+}
+.blink_me {
+  font-family: 'Iceland';
+  text-align: center;
+  top:0%;
+  left:10%;
+  z-index: 10;
+  color:white;
+  font-size: 30px;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}
 
 
-.dogfeet{
-  position:absolute;
-  left:350px;
-  top:600px;
-}
-.dogfeetbig{
-  position:absolute;
-  left:550px;
-  top:700px;
-}
 
 .WakeHappyUp{
   text-align: center;
+
 }
+
+.hoverplayText{
+  font-size: 17px;
+  color:black;
+  position: absolute;
+  top:43%;
+  left: 46%;
+
+}
+
 
 .HappyChicken{
   text-align: center;
 }
 .Happytongue{
   position: absolute;
-  left:70%;
+  left:25%;
+  transition: transform .2s; /* Animation */
 }
-
-
-
-
-
-
-
-.dogBone {
-  text-align: center;
-  z-index:2;
-  transition:transform 500ms ;
+.Happytongue:hover {
+  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.dogBone:hover{
-    transform:translateX(20px,180px)
-}
-
+/* .stars a{
+  color: white;
+} */
 .riceball {
-
-  text-align: center;
-
+  position: absolute;
+  right:10%;
 }
 .riceball:hover {
   animation: shake 0.3s;
@@ -391,7 +400,170 @@ p a:hover{
   100% { transform: translate(1px, -2px) rotate(-5deg); }
 }
 
+/* .dogFood {
+  position: absolute;
+  left: 10%;
+  top:10%;
+} */
 
+
+
+.ChickenToy{
+  position: absolute;
+  left: 10%;
+  top:37%;
+}
+
+.ChickenToy {
+  display: inherit;
+  transform-origin: center center; }
+
+.ChickenToy-freeze,
+.ChickenToy-constant.ChickenToy-constant--hover:hover,
+.ChickenToy-trigger:hover .ChickenToy-constant.ChickenToy-constant--hover {
+  animation-play-state: paused; }
+
+.ChickenToy-freeze:hover,
+.ChickenToy-trigger:hover .ChickenToy-freeze, .ChickenToy:hover,
+.ChickenToy-trigger:hover .ChickenToy {
+  animation-play-state: running; }
+
+@keyframes ChickenToy {
+  2% {
+    transform: translate(1.5px, 1.5px) rotate(-0.5deg); }
+  4% {
+    transform: translate(0.5px, -0.5px) rotate(1.5deg); }
+  6% {
+    transform: translate(-0.5px, -0.5px) rotate(0.5deg); }
+  8% {
+    transform: translate(-1.5px, -0.5px) rotate(1.5deg); }
+  10% {
+    transform: translate(0.5px, -0.5px) rotate(0.5deg); }
+  12% {
+    transform: translate(0.5px, 1.5px) rotate(0.5deg); }
+  14% {
+    transform: translate(2.5px, -0.5px) rotate(1.5deg); }
+  16% {
+    transform: translate(-1.5px, -0.5px) rotate(1.5deg); }
+  18% {
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg); }
+  20% {
+    transform: translate(-0.5px, 2.5px) rotate(-0.5deg); }
+  22% {
+    transform: translate(-1.5px, 0.5px) rotate(0.5deg); }
+  24% {
+    transform: translate(1.5px, -1.5px) rotate(1.5deg); }
+  26% {
+    transform: translate(-0.5px, 0.5px) rotate(0.5deg); }
+  28% {
+    transform: translate(-0.5px, -0.5px) rotate(1.5deg); }
+  30% {
+    transform: translate(0.5px, -1.5px) rotate(-0.5deg); }
+  32% {
+    transform: translate(2.5px, -0.5px) rotate(0.5deg); }
+  34% {
+    transform: translate(-1.5px, 0.5px) rotate(1.5deg); }
+  36% {
+    transform: translate(2.5px, 2.5px) rotate(-0.5deg); }
+  38% {
+    transform: translate(0.5px, 0.5px) rotate(1.5deg); }
+  40% {
+    transform: translate(-0.5px, 0.5px) rotate(1.5deg); }
+  42% {
+    transform: translate(0.5px, -0.5px) rotate(-0.5deg); }
+  44% {
+    transform: translate(1.5px, -1.5px) rotate(1.5deg); }
+  46% {
+    transform: translate(-1.5px, -1.5px) rotate(-0.5deg); }
+  48% {
+    transform: translate(-1.5px, 2.5px) rotate(-0.5deg); }
+  50% {
+    transform: translate(-1.5px, -1.5px) rotate(0.5deg); }
+  52% {
+    transform: translate(2.5px, -0.5px) rotate(-0.5deg); }
+  54% {
+    transform: translate(2.5px, -1.5px) rotate(0.5deg); }
+  56% {
+    transform: translate(2.5px, -0.5px) rotate(0.5deg); }
+  58% {
+    transform: translate(2.5px, 1.5px) rotate(1.5deg); }
+  60% {
+    transform: translate(1.5px, -1.5px) rotate(0.5deg); }
+  62% {
+    transform: translate(1.5px, 2.5px) rotate(1.5deg); }
+  64% {
+    transform: translate(1.5px, 0.5px) rotate(1.5deg); }
+  66% {
+    transform: translate(1.5px, 1.5px) rotate(0.5deg); }
+  68% {
+    transform: translate(1.5px, -1.5px) rotate(-0.5deg); }
+  70% {
+    transform: translate(1.5px, -0.5px) rotate(0.5deg); }
+  72% {
+    transform: translate(-1.5px, -1.5px) rotate(-0.5deg); }
+  74% {
+    transform: translate(2.5px, 2.5px) rotate(0.5deg); }
+  76% {
+    transform: translate(1.5px, -1.5px) rotate(-0.5deg); }
+  78% {
+    transform: translate(-0.5px, 2.5px) rotate(-0.5deg); }
+  80% {
+    transform: translate(0.5px, -1.5px) rotate(-0.5deg); }
+  82% {
+    transform: translate(2.5px, -1.5px) rotate(-0.5deg); }
+  84% {
+    transform: translate(-1.5px, -1.5px) rotate(0.5deg); }
+  86% {
+    transform: translate(-1.5px, 1.5px) rotate(-0.5deg); }
+  88% {
+    transform: translate(2.5px, 0.5px) rotate(1.5deg); }
+  90% {
+    transform: translate(1.5px, 1.5px) rotate(1.5deg); }
+  92% {
+    transform: translate(1.5px, 2.5px) rotate(0.5deg); }
+  94% {
+    transform: translate(2.5px, -0.5px) rotate(1.5deg); }
+  96% {
+    transform: translate(1.5px, 2.5px) rotate(1.5deg); }
+  98% {
+    transform: translate(1.5px, 2.5px) rotate(0.5deg); }
+  0%, 100% {
+    transform: translate(0, 0) rotate(0); } }
+
+.ChickenToy:hover,
+.ChickenToy-trigger:hover .ChickenToy, .ChickenToy.ChickenToy-freeze, .ChickenToy.ChickenToy-constant {
+  animation-name: shake;
+  animation-duration: 100ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; }
+
+
+
+
+
+
+
+
+
+
+
+
+/* .ClickMe{
+  position: relative;
+  top:75%;
+  left: 20%;
+} */
+.ClickDog{
+  position: absolute;
+  top:52%;
+  left: 32%;
+}
+h4{
+  position:absolute;
+  top: 52%;
+  left:25.5%;
+  color:white;
+}
 
 
 .dogwalk{
@@ -400,6 +572,9 @@ p a:hover{
 }
 .dogwalk img {
   z-index: 5;
+  position: absolute;
+  top:50%;
+  left: 30%;
 }
 
 
@@ -450,37 +625,51 @@ p a:hover{
 
 .showDogBall1 {
   opacity: 1;
-  transform: translateY(-300px) rotate(45deg);
+  transform: translateX(-250px) translateY(-230px) rotate(145deg);
   transition: all 2s ease;
 }
 .showDogBall2 {
   opacity: 1;
-  transform: translateX(300px) rotate(-45deg);
+  transform: translateX(300px)translateY(-80px) rotate(-345deg);
   transition: all 2s ease;
 }
 .showDogBall3 {
   opacity: 1;
-  transform: translateY(200px) rotate(-45deg);
+  transform: translateX(400px) translateY(200px) rotate(-165deg);
   transition: all 2s ease;
 }
 .showDogBall4 {
   opacity: 1;
-  transform: translateX(-300px) rotate(45deg);
+  transform: translateX(-300px) translateY(100px)rotate(285deg);
   transition: all 2s ease;
 }
 
 
 
 
-.happySleep{
-  text-align: center;
-  z-index: 120;
-
-  -webkit-animation: hover_y 7s ease-in-out infinite;
-  -moz-animation: hover_y 7s ease-in-out infinite;
-  -o-animation: hover_y 7s ease-in-out infinite;
-  animation: hover_y 7s ease-in-out infinite;
+.happyafternoonwalk{
+  margin-top:30%
+  transition:7s;
+  -webkit-transition:7s;
+  -moz-transition:5s;
+  position:absolute;
+  right:calc(80% - 100px);
 }
+.happyafternoonwalk:hover {
+  right:0;
+}
+
+.sunandcloud{
+  position: absolute;
+  top:-16%;
+  left:70%;
+  -webkit-animation: hover_x 2s ease-in-out infinite;
+  -moz-animation: hover_x 2s ease-in-out infinite;
+  -o-animation: hover_x 2s ease-in-out infinite;
+  animation: hover_x 2s ease-in-out infinite;
+}
+
+
 
 @-webkit-keyframes hover_y {
  0%, 100% {
@@ -548,23 +737,106 @@ p a:hover{
 	}
 }
 
+.happySleep{
+  text-align: center;
+  z-index: 1;
+  -webkit-animation: hover_y 7s ease-in-out infinite;
+  -moz-animation: hover_y 7s ease-in-out infinite;
+  -o-animation: hover_y 7s ease-in-out infinite;
+  animation: hover_y 7s ease-in-out infinite;
+}
+
+@-webkit-keyframes hover_y {
+ 0%, 100% {
+		transform: translateY(10);
+	}
+	50% {
+		transform: translateY(30%);
+	}
+}
+@-moz-keyframes hover_y {
+  0%, 100% {
+		transform: translateY(10);
+	}
+	50% {
+		transform: translateY(30%);
+	}
+}
+@-o-keyframes hover_y {
+  0%, 100% {
+		transform: translateY(10);
+	}
+	50% {
+		transform: translateY(30%);
+	}
+}
+@keyframes hover_y {
+	0%, 100% {
+		transform: translateY(10);
+	}
+	50% {
+		transform: translateY(30%);
+	}
+}
+
+@-webkit-keyframes hover_x {
+  0%, 100% {
+		transform: translateX(30);
+	}
+	50% {
+		transform: translateX(10%);
+	}
+}
+@-moz-keyframes hover_x {
+  0%, 100% {
+		transform: translateX(30);
+	}
+	50% {
+		transform: translateX(10%);
+	}
+}
+@-o-keyframes hover_x {
+  0%, 100% {
+		transform: translateX(30);
+	}
+	50% {
+		transform: translateX(10%);
+	}
+}
+@keyframes hover_x {
+  0%, 100% {
+		transform: translateX(30);
+	}
+	50% {
+		transform: translateX(10%);
+	}
+}
+
 .stars {
       position:absolute;
-      top:500%;
-      bottom:100%;
       width:100%;
-      height:100%;
+      height:110%;
       display:block;
-
-
-    }
-.stars {
       background:#000 url(image/stars.png) repeat top center;
-      z-index:0;
+      z-index:-1;
       opacity: 0.5;
     }
-
-
+.Moon{
+      position: absolute;
+      right:56%;
+      top:4%;
+      -webkit-animation: hover_x 2s ease-in-out infinite;
+      -moz-animation: hover_x 2s ease-in-out infinite;
+      -o-animation: hover_x 2s ease-in-out infinite;
+      animation: hover_x 2s ease-in-out infinite;
+    }
+    h3 {
+      text-align: center;
+      color: white;
+      font-family: sans-serif;
+      font-size: 70px;
+      z-index: 3;
+    }
 
 
 
@@ -574,14 +846,246 @@ p a:hover{
 
 } */
 
-
-
-
-
-
-/*REEEEEEEEEEESPONSIVE*/
-@media (max-width: 650px) {
-  .Red {
-    font-size: 1.4em;
-  }
+.uparrow{
+  position: fixed;
+  right: auto;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+.arrow-top {
+  transform: rotate(-45deg);
+  position: absolute;
+  right:3%;
+  top: 744%;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+}
+
+
+/* //I-PHONE X  Safari/// */
+@media (max-width: 375px) {
+  .slideshow img{
+    display: none;
+  }
+  body{
+    box-sizing: border-box;
+
+  }
+  .Red {
+    top: 80%;
+    left:3%;
+    font-size: 55px;
+    text-align: center;
+
+  }
+
+  .happyface {
+    position: relative;
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    left:40%;
+  }
+
+  #wakeup1{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top:23%;
+    left: 30%;
+  }
+  .wakeup2{
+
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left:30%;
+  }
+  .hoverplayText{
+    display: none;
+  }
+
+  .stars {
+        width:100%;
+        display:block;
+      }
+  .ball1{
+    width:30%;
+    height: auto;
+  }
+  .showDogBall1 {
+    opacity: 1;
+    transform: translateX(70px) translateY(70px) rotate(145deg);
+    transition: all 2s ease;
+  }
+  .ball2{
+    width:30%;
+    height: auto;
+  }
+  .showDogBall2 {
+
+    opacity: 1;
+    transform: translateX(-50px)translateY(50px) rotate(-345deg);
+    transition: all 2s ease;
+  }
+
+  .ball3{
+    width:30%;
+    height: auto;
+  }
+  .showDogBall3 {
+    opacity: 1;
+    transform: translateX(-150px) translateY(150px) rotate(-165deg);
+    transition: all 2s ease;
+  }
+
+  .ball4{
+    width:30%;
+    height: auto;
+  }
+  .dogball4:hover {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+  }
+  .showDogBall4 {
+    opacity: 1;
+    transform: translateX(-20px) translateY(-20px)rotate(285deg);
+    transition: all 2s ease;
+  }
+  .ClickDog{
+    position: absolute;
+    top:52%;
+    left: 33%;
+  }
+  h4{
+    position:absolute;
+    top: 52%;
+    left:15%;
+
+  }
+  .riceball{
+    display: none;
+  }
+  .chickenrun{
+    width:40%;
+    height:auto;
+
+  }
+  .ChickenToy{
+    width:10%;
+    height:auto;
+    position: relative;
+    top:-20%;
+    right:20px;
+    z-index: 3;
+}
+  .Happytongue{
+    height: auto;
+    width:3%;
+    height: auto;
+    transition: transform .2s; /* Animation */
+  }
+  .Happytongue:hover {
+    transform: scale(1.8); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .dogwalk{
+    position: absolute;
+    top:50%;
+    left:10%;
+    width:70%;
+    height:auto;
+
+  }
+  .happyafternoonwalk{
+    margin-top: 10%;
+    transition:2s;
+    -webkit-transition:2s;
+    -moz-transition:2s;
+    width: 10%;
+    height: 10%;
+    right:calc(130%);
+  }
+  .hoverplayText{
+    position: absolute;
+    left: 46%;
+    }
+
+  .Moon{
+        left:20%;
+        top:2%;
+}
+
+.blink_me {
+  font-family: 'Iceland';
+  text-align: center;
+  top:50%;
+  left:10%;}
+
+
+
+    h2,h3{
+      font-size: 40px;
+      top:40%;
+    }
+
+  .happySleepImage{
+    width:80%;
+    height: auto;
+    text-align: center;
+
+  }

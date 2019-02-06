@@ -1,0 +1,168 @@
+<!-- ///project3/// -->
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="utf-8">
+
+        <title> HappyDailyLife </title>
+          <link href="reset.css"
+          rel="reset" type="text/css" media="screen">
+          <link href="https://fonts.googleapis.com/css?family=Anton|Major" rel="stylesheet">
+          <link href="Project03.css" rel="stylesheet" type="text/css" media="screen">
+          <link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https://codepen.io/rdallaire/pen/apoyx&format=json" title="Return to Top Arrow"/>
+          <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+          <script src="//code.jquery.com/jquery-1.12.4.js">
+          </script>
+          <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js">
+          </script>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+          </script>
+<style>
+</style>
+    </head>
+
+<body>
+
+  <header>
+    <div class="title">
+      <p>
+        <a class="Red">HAPPY'S <br> DAILY LIFE</a>
+      </p>
+    </div>
+    <div class="slideshow"></div>
+
+  </header>
+  <div class="container">
+    <div class="arrow">
+      <a href="#section07">
+        <img src="http://marcelklacan.com/images/icon.png" alt="" />
+      </a>
+    </div>
+  </div>
+  <section id="section07" class="demo">
+  </section>
+<div>
+  <img src= "./image/puppy.png"  alt="HappyImage" title="HappyImage" class="happyface">
+</div>
+
+<div class="clock">
+  <p class="blink_me">9:00am</p>
+</div>
+<div class="panel" data-color="yellow">
+  <h2>Wake me up</h2>
+  <div class="WakeHappyUp">
+    <div id="wakeup1">
+    <img src="image/IMG_2595.png" alt="WakeHappyUp" title="WakeHappyUp"
+    onmouseover="PlaySound('mySound')"
+        onmouseout="StopSound('mySound')">
+      </div>
+    <img class="wakeup2"src="./image/IMG_2593.png" alt="WakeHappyUp" title="WakeHappyUp"
+    onmouseover="PlaySound('mySound')"
+    onmouseout="StopSound('mySound')">
+    <audio id='mySound' src='http://upload.wikimedia.org/wikipedia/commons/6/6f/Cello_Live_Performance_John_Michel_Tchaikovsky_Violin_Concerto_3rd_MVT_applaused_cut.ogg'/>
+  </div>
+  <p>
+    <a class="hoverplayText"> Hover me to play</a>
+  </p>
+</div>
+
+<div class="clock">
+  <p class="blink_me">11:00am</p>
+</div>
+<div class="panel" data-color="red">
+  <h2>Feed me</h2>
+  <div class="HappyChicken">
+    <img class="chickenrun"src="./image/IMG_5782_1.png" alt="HappyChicken" title="HappyChicken">
+  </div>
+  <div class="ChickenToy">
+    <img src="./image/yellowchicken.png"
+    value="PLAY" onclick="play()">
+      <audio id="audio" src="./audio/chicken.mp3">
+      </audio>
+  </div>
+  <div class="Happytongue">
+    <img src="./image/HappyEat.png" alt="Happytongue" title="Happytongue">
+  </div>
+  <div class="riceball">
+    <img src="./image/riceball_small.png" alt="riceball" title="riceball">
+  </div>
+</div>
+
+</div>
+
+
+<div class="clock">
+  <p class="blink_me">2:00pm</p>
+</div>
+<div class="panel" data-color="violet">
+  <h2>Play with me</h2>
+  <div class="ClickMe" alt="clickme">
+    <img class="ClickDog"src="image/right-arrow.png">
+    <h4>Click me </h4>
+  </div>
+  <div class="dogwalk">
+    <img src="./image/IMG_9099.png" alt="dogwalk" title="dogwalk">
+  </div>
+  <div class="dogball1">
+    <img class="ball1" src="./image/ball.png"alt="dogball1">
+  </div>
+  <div class="dogball2">
+    <img class="ball2" src="./image/ball.png"alt="dogball2">
+  </div>
+  <div class="dogball3">
+    <img class="ball3"src="./image/ball.png"alt="dogball3" >
+  </div>
+  <div class="dogball4">
+    <img class="ball4"src="./image/ball.png"alt="dogball4">
+  </div>
+</div>
+
+
+<div class="clock">
+  <p class="blink_me">5:00pm</p>
+</div>
+<div class="panel" data-color="blue">
+  <h2>Afternoon walk</h2>
+    <div class="sunandcloud">
+      <img src="./image/daylight.png" alt="sunandcloud" title="sunandcloud">
+    </div>
+
+    <div class="happyafternoonwalk">
+      <img src="./image/IMG_9100_2.png"   alt="happyafternoonwalk"
+      onmouseover="PlaySound('dogPanting')"
+      onmouseout="StopSound('dogPanting')">
+      <audio id='dogPanting' src='./audio/dogPanting.mp3'/>
+    </div>
+</div>
+
+
+<div class="panel" data-color="hex">
+  <div class="stars">
+  </div>
+    <div class="clock">
+      <p class="blink_me">10:00pm</p>
+    </div>
+    <div class="Moon">
+      <img src="./image/Moon_small.png" alt="Moon" title="moon">
+    </div>
+    <h3>Good night</h3>
+    <div class="happySleep">
+      <img class="happySleepImage" src="./image/sleephappybig.png" alt="happySleep" title="happySleep">
+    </div>
+</div>
+
+<!-- Return to Top -->
+<div class="uparrow"></div>
+  <a href="javascript:" id="return-to-top">
+      <img "uparrow" src= "image/up-arrow.png" alt="uparrow" title="uparrow">
+  </a>
+
+<p class= "c1"> </p>
+
+</body>
+<script src="script.js" ></script>
+
+
+</html>
